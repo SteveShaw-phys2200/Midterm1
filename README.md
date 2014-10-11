@@ -1,4 +1,4 @@
-##|Midterm 1|
+##Midterm 1
 ###Main program found in **_Midterm1.c_**
 ###Note improvements to *makefile*
 
@@ -10,22 +10,22 @@
 
 ####Answers to Midterm I Programing Project:
 1. 
-..* *pi_leibniz.c* contains Answer 1
+  * *pi_leibniz.c* contains Answer 1
 2.
-..* *Midterm1.c* contains Answer 2 (top)
-..* value of n1: **1100000**
+  * *Midterm1.c* contains Answer 2 (top)
+  * value of n1: **1100000**
 3. 
-..* *pi_leibniz.c* contains Answer 3
+  * *pi_leibniz.c* contains Answer 3
 4.
-..* *Midterm1.c* contains Answer 4 (middle)
-..* value of n2: **4**
+  * *Midterm1.c* contains Answer 4 (middle)
+  * value of n2: **4**
 5.
-..* *Midterm1.c* contains Answer 5 (bottom)
-..* tLeibniz: **8.89 secs** with 50 iterations
-..* tBBP: **8.99 secs** with 2,000,000 iterations
-..* tLeibniz / tBBP: **39555**
+  * *Midterm1.c* contains Answer 5 (bottom)
+  * tLeibniz: **8.89 secs** with 50 iterations
+  * tBBP: **8.99 secs** with 2,000,000 iterations
+  * tLeibniz / tBBP: **39555**
 6. N/A
-..* (github)
+  * (github)
 7. N/A
-..* (this *README.md*)
+  * (this *README.md*)
 
