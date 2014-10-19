@@ -1,8 +1,8 @@
 CC=gcc
 # flags for compiling .c's
-CFLAGS=-c -std=c99 -Wall -lm
+CFLAGS=-c -std=c99 -Wall
 # flags for compiling .o's
-OFLAGS=-lm
+OFLAGS=
 # list of .h's
 DEPS= pi_funs.h
 # list of dependent .c's
@@ -12,7 +12,7 @@ OBJECTS=$(SOURCES:.c=.o)
 # final binary produced is Midterm1
 EXECUTABLE=Midterm1
 # files to be deleted with clean
-CLEANFILES= *.o *.c~ *.o~ *.h~ Midterm~ makefile~
+CLEANFILES= *.o *.c~ *.o~ *.h~ Midterm~ makefile~ README.md~
 
 all: $(SOURCES) $(EXECUTABLE)
 	# sucsess!

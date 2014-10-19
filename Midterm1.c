@@ -62,7 +62,7 @@ int main(void)
 	int n_b = 5;
 	
 	// M_b is # of iterations so t = 5 - 10 seconds
-	int M_b = 2000000;
+	int M_b = 4000000;
 	
 	for(int i = 0; i < n_b; i++)
 	{

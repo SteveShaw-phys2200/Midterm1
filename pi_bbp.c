@@ -4,34 +4,32 @@
  *
  */
 #include <stdio.h>
-#include <math.h>
 
 double pi_bbp (int n)
 {
-	// initialize Pi count, BBP(0)
-	// pow doesnt handle 0 well
-	double Pi = 4 - .5 - .2 - .16666666666666666;
-	
-	if (n == 0)
+	// intitalize all denominators with n = 0
+	double front = 1.;
+	double firstTerm = 1.;
+	double secondTerm = 4.;
+	double thirdTerm = 5.;
+	double fourthTerm = 6.;
+
+	// start pi count at n = 0
+	double Pi = 0.;
+	Pi += 1. /front * ( 4. /firstTerm - 2. /secondTerm - 1. /thirdTerm - 1. /fourthTerm ); 
+
+	// implement front = 16^n,  *Term = 8n + c.  from n=1 to n=n-1
+	for (int i = 0; i < n; i++)
 	{
-		return Pi;
+		front *= 16.;
+		firstTerm += 8.;
+		secondTerm += 8.;
+		thirdTerm += 8.;
+		fourthTerm += 8.;
+
+		// add each itteration to pi count
+		Pi += 1. /front * ( 4. /firstTerm - 2. /secondTerm - 1. /thirdTerm - 1. /fourthTerm ); 
 	}
-	
-	// BBP(1)
-	Pi += 1. / 16. * ( 4. /(8.+1.) - 2. /(8.+4.) - 1./(8.+5) - 1./(8.+6.));
-	
-	if (n == 1)
-	{
-		return Pi;
-	}
-	
-	// adding each term in the series to the sum Pi from 1 to nth iteration
-	// im actually doing n+1 itterations for n > 1 ...oops ill fix later
-	for (int i = 2; i <= n; i++)
-	{	
-		// BBP series implimentation 
-		Pi += 1. / pow(16.,(double)i) * ( 4. /(8.*(double)i+1.) - 2. /(8.*(double)i+4.) - 1./(8.*(double)i+5) - 1./(8.*(double)i+6.));
-	}
-	
+ 
 	return Pi;
 }
